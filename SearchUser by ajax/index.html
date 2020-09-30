@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function showUser(fname) {
+                if (fname.length == 0) {
+                    document.getElementById("userInfo").innerHTML = "";
+                    return;
+                } else {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("userInfo").innerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open("GET", "getUser.php?fname=" + fname, true);
+                    xhttp.send();
+                }
+            }
+        </script>
+        <title>AJAX Lab Assignment</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body bgcolor="wheat">
+        <div id="a">
+    <h1 align="center">Library Management System</h1>
+    </div>
+    <br>
+    <h1 align="center">Search Student in the database</h1>
+    <br>
+        <form>
+            <div class="row">
+                    <h2 align="left">Enter User</h2>
+
+                    <div class="col-20">First name:</div>
+                     <div class="col-80"><input type="text" placeholder="Enter First Name" onkeyup="showUser(this.value)">
+            </div>
+        </div>
+        <div class="row">
+            <h2 align="left">User information</h2>
+            <div id="userInfo"></div>
+        </div>
+        </form>
+        <br>
+        
+    </body>
+</html>

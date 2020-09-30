@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-primary" style="width:50%;margin:5% auto">
+			<div class="panel-heading">
+				<h3 class="panel-title" align="center"><strong>Registration Page</strong></h3>
+			</div>
+				<div class="panel-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-md-2">Username:</label>
+                    <div class="col-md-10">
+						<input type="text" class="form-control" id="Username" placeholder="Enter Username">
+					</div>
+				</div>
+					<div class="form-group">
+						<label class="control-label col-md-2">Password:</label>
+                    <div class="col-md-10">
+						<input type="Password" class="form-control" id="Password" placeholder="Enter Password">
+					</div>
+				</div>
+					           <div class="form-group">
+                    <label class="control-label col-md-2">Firstname:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="firstname" placeholder="Enter your Firstname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Lastname:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="lastname" placeholder="Enter your Lastname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Gender:</label>
+                    <div class="radio col-md-10">
+                            <label><input type="radio" name="gender">Male</label>
+                            <label><input type="radio" name="gender">Female</label>
+                            <label><input type="radio" name="gender">Other</label>
+                    </div>
+                </div>
+        <div class="form-group">
+                    <label class="control-label col-md-2">Email:</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" name="email" placeholder="Enter your Email" required>
+                    </div>
+            </div>
+        <div class="form-group">
+                    <label class="control-label col-md-2">Mobile:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="mobile" placeholder="Enter your mobile no" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Class:</label>
+                    <div class="col-md-10">
+                        <select class="form-control">
+                            <option>Select Class</option>
+                            <option>FE </option>
+                            <option>SE </option>
+                            <option>TE </option>
+                            <option>BE </option>
+                        </select>
+                    </div>
+                </div>
+         <div class="form-group">
+                    <label class="control-label col-md-2">Department:</label>
+                    <div class="col-md-10">
+                        <select class="form-control">
+                            <option>Select Department</option>
+                            <option>Computer</option>
+                            <option>ENTC</option>
+                            <option>IT</option>
+                            <option>Mechanical</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Age:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" name="age" placeholder="Enter your Age" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Address:</label>
+            <div class="col-md-10"><textarea cols="50" class="form-control"></textarea></div>                
+        </div>
+        <div class="form-group">
+        <label class="control-label col-md-2">Subject:</label>
+        <div class="col-md-10">
+        <input type="checkbox" name="subject" value="s1" align="center">
+        <label>OOP</label>
+        
+        <input type="checkbox" name="subject" value="s2">
+        <label>PPL</label>
+        
+        <input type="checkbox" name="subject" value="s3" align="center">
+        <label>MP</label>
+        
+        <input type="checkbox" name="subject" value="s4">
+        <label>DM</label>
+    </div>
+    </div>
+        <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <label>Already Registered?<a href="login.html">Click Here for login</a></label>
+                    </div>
+                </div>
+			</form>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</body>
+</html>
